@@ -1,0 +1,21 @@
+PODS:
+  - BEMAnalogClock (1.4)
+
+DEPENDENCIES:
+  - "BEMAnalogClock (from `https://wrutkowski@github.com/wrutkowski/BEMAnalogClock.git`)"
+
+EXTERNAL SOURCES:
+  BEMAnalogClock:
+    :git: "https://wrutkowski@github.com/wrutkowski/BEMAnalogClock.git"
+
+CHECKOUT OPTIONS:
+  BEMAnalogClock:
+    :commit: 104b5aa2401503674318e2e96446e4fed002742d
+    :git: "https://wrutkowski@github.com/wrutkowski/BEMAnalogClock.git"
+
+SPEC CHECKSUMS:
+  BEMAnalogClock: 88786eba7763d63abd5a9956c2d1106f30c7f251
+
+PODFILE CHECKSUM: 350df0f13dbfad705a38f2549c32b81f78f201b3
+
+COCOAPODS: 1.6.0.beta.2

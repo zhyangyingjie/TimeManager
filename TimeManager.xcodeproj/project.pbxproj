@@ -12,6 +12,9 @@
 		4022966621A8E7E900E4365F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4022966421A8E7E900E4365F /* Main.storyboard */; };
 		4022966821A8E7EA00E4365F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4022966721A8E7EA00E4365F /* Assets.xcassets */; };
 		4022966B21A8E7EA00E4365F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4022966921A8E7EA00E4365F /* LaunchScreen.storyboard */; };
+		4022967321A8E90300E4365F /* TMTimeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4022967221A8E90300E4365F /* TMTimeHandler.swift */; };
+		40958C1021AC40130030EF4C /* BEMAnalogClock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40958C0F21AC40130030EF4C /* BEMAnalogClock.framework */; };
+		40CD7F7921AA7C90005BC950 /* Pods_TimeManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CD7F7821AA7C90005BC950 /* Pods_TimeManager.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,13 @@
 		4022966721A8E7EA00E4365F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4022966A21A8E7EA00E4365F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4022966C21A8E7EA00E4365F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4022967221A8E90300E4365F /* TMTimeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMTimeHandler.swift; sourceTree = "<group>"; };
+		40958C0F21AC40130030EF4C /* BEMAnalogClock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BEMAnalogClock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40CD7F7621AA7C4C005BC950 /* BEMAnalogClock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BEMAnalogClock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40CD7F7821AA7C90005BC950 /* Pods_TimeManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_TimeManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B67120CEF2C32DDF5744F4B /* Pods-TimeManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeManager.release.xcconfig"; path = "Target Support Files/Pods-TimeManager/Pods-TimeManager.release.xcconfig"; sourceTree = "<group>"; };
+		94B358900C71E5DC73A587F9 /* Pods_TimeManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAECA1E9DEA7B16E4A4A2B63 /* Pods-TimeManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeManager.debug.xcconfig"; path = "Target Support Files/Pods-TimeManager/Pods-TimeManager.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40958C1021AC40130030EF4C /* BEMAnalogClock.framework in Frameworks */,
+				40CD7F7921AA7C90005BC950 /* Pods_TimeManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +52,8 @@
 			children = (
 				4022965F21A8E7E900E4365F /* TimeManager */,
 				4022965E21A8E7E900E4365F /* Products */,
+				CA767744C4ABC0504B72F9BD /* Pods */,
+				646ED0A49BF2490DB29DF39B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +70,33 @@
 			children = (
 				4022966021A8E7E900E4365F /* AppDelegate.swift */,
 				4022966221A8E7E900E4365F /* ViewController.swift */,
+				4022967221A8E90300E4365F /* TMTimeHandler.swift */,
 				4022966421A8E7E900E4365F /* Main.storyboard */,
 				4022966721A8E7EA00E4365F /* Assets.xcassets */,
 				4022966921A8E7EA00E4365F /* LaunchScreen.storyboard */,
 				4022966C21A8E7EA00E4365F /* Info.plist */,
 			);
 			path = TimeManager;
+			sourceTree = "<group>";
+		};
+		646ED0A49BF2490DB29DF39B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40958C0F21AC40130030EF4C /* BEMAnalogClock.framework */,
+				40CD7F7821AA7C90005BC950 /* Pods_TimeManager.framework */,
+				40CD7F7621AA7C4C005BC950 /* BEMAnalogClock.framework */,
+				94B358900C71E5DC73A587F9 /* Pods_TimeManager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA767744C4ABC0504B72F9BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAECA1E9DEA7B16E4A4A2B63 /* Pods-TimeManager.debug.xcconfig */,
+				7B67120CEF2C32DDF5744F4B /* Pods-TimeManager.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +106,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4022966F21A8E7EA00E4365F /* Build configuration list for PBXNativeTarget "TimeManager" */;
 			buildPhases = (
+				44FD92E5FBD1CEA1D8C1C767 /* [CP] Check Pods Manifest.lock */,
 				4022965921A8E7E900E4365F /* Sources */,
 				4022965A21A8E7E900E4365F /* Frameworks */,
 				4022965B21A8E7E900E4365F /* Resources */,
+				333650C51279D247FE5A1792 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +167,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		333650C51279D247FE5A1792 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeManager/Pods-TimeManager-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BEMAnalogClock/BEMAnalogClock.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BEMAnalogClock.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimeManager/Pods-TimeManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44FD92E5FBD1CEA1D8C1C767 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimeManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4022965921A8E7E900E4365F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4022966321A8E7E900E4365F /* ViewController.swift in Sources */,
+				4022967321A8E90300E4365F /* TMTimeHandler.swift in Sources */,
 				4022966121A8E7E900E4365F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,15 +355,23 @@
 		};
 		4022967021A8E7EA00E4365F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAECA1E9DEA7B16E4A4A2B63 /* Pods-TimeManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8R3Q6XY92M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BEMAnalogClock\"",
+					"$(SRCROOT)",
+				);
 				INFOPLIST_FILE = TimeManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.feifei.TimeManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +381,23 @@
 		};
 		4022967121A8E7EA00E4365F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B67120CEF2C32DDF5744F4B /* Pods-TimeManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8R3Q6XY92M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BEMAnalogClock\"",
+					"$(SRCROOT)",
+				);
 				INFOPLIST_FILE = TimeManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.feifei.TimeManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
